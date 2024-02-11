@@ -1,9 +1,7 @@
 import Component from "@ember/component";
 import { action } from "@ember/object";
+import { tracked } from '@glimmer/tracking';
 import I18n from "I18n";
-
-// needed until we add @glimmer/tracking
-const tracked = Ember._tracked;
 
 const OPENSEA_API = "https://api.opensea.io/api/v1";
 export const ASSETS_LIMIT = 20;
